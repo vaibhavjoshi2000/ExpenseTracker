@@ -44,8 +44,8 @@ Follow these steps to set up and run the project on your machine:
       1. Open the project in **Visual Studio**.
       2. Press **F5** to run the application.
       3. Alternatively, use the .NET CLI:
-            i. dotnet build
-            ii. dotnet run
+            1. dotnet build
+            2. dotnet run
 6. **Usage Instructions**
          1. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
          2.   Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
