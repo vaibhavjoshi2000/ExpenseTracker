@@ -47,27 +47,27 @@ Follow these steps to set up and run the project on your machine:
             1. dotnet build
             2. dotnet run
 6. **Usage Instructions**
-         1. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
-         2. Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
-         3. Summary: Click on the "Summary" link to view expense summaries by category.
+         1. **Expenses** Navigate to the "Expenses" page to view all recorded expenses.
+         2. **Add Expense** Use the "Add Expense" link in the navbar to record a new expense.
+         3. **Summary** Click on the "Summary" link to view expense summaries by category.
 
 7. **Folder Structure**
-          1. Controllers: Handles the request and response logic.
-          2. Models: Defines the database schema and business logic.
-          3. Views: Contains Razor pages for the UI.
-          4. wwwroot: Static files like CSS, JavaScript, and images.
+          1. **Controllers**: Handles the request and response logic.
+          2. **Models**: Defines the database schema and business logic.
+          3. **Views**: Contains Razor pages for the UI.
+          4. **wwwroot**: Static files like CSS, JavaScript, and images.
 
 8. **Technologies Used**
-        1.ASP.NET Core MVC
-        2.Entity Framework Core
-        3.SQL Server
+        1. ASP.NET Core MVC
+        2. Entity Framework Core
+        3. SQL Server
         4. Bootstrap (for styling)
 
 9. **Contribution**
-         1.Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
+         1. Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
 
 10. **License**
-      1.This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the           license terms.
+      1. This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the           license terms.
 
 11. **Troubleshooting**
        1. Verify your SQL Server instance is running.
