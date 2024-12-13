@@ -23,62 +23,60 @@ Follow these steps to set up and run the project on your machine:
       i. git clone https://github.com/vaibhavjoshi2000/ExpenseTracker.git
       ii. cd expense-tracker
 2. **Set Up the Database**
-   1. Open **SQL Server Management Studio (SSMS)** or a similar SQL Server client.
-   2. Create a new database named ExpenseTrackerDb.
-   3. Update the **connection string** in **appsettings.json** if necessary:
+   i. Open **SQL Server Management Studio (SSMS)** or a similar SQL Server client.
+   ii. Create a new database named ExpenseTrackerDb.
+   iii. Update the **connection string** in **appsettings.json** if necessary:
     "ConnectionStrings": {
        "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=ExpenseTrackerDb;Integrated    
          Security=True;MultipleActiveResultSets=True;"
         }
-   4. Replace YOUR_SERVER_NAME with your SQL Server instance name.
-   5. If you are using SQL Authentication, replace Integrated Security=True with User ID=your-username;Password=your-   
+   iv. Replace YOUR_SERVER_NAME with your SQL Server instance name.
+   v. If you are using SQL Authentication, replace Integrated Security=True with User ID=your-username;Password=your-   
        password;.   
 3. **Install below Entity Framework from Nuget Package Manager**
-   1. Microsoft.EntityFrameworkCore
-   2. Microsoft.EntityFrameworkCore.Tools
-   3. Microsoft.EntityFrameworkCore.SqlServer
+   i. Microsoft.EntityFrameworkCore
+   ii. Microsoft.EntityFrameworkCore.Tools
+   iii. Microsoft.EntityFrameworkCore.SqlServer
 4. **Apply Migrations(It will create the necessary tables in the database)**
-     1. Add-Migration "InitialCreate"
-     2. Update-database
+     i. Add-Migration "InitialCreate"
+     ii. Update-database
 5. **Build and Run the Application**
    1. Open the project in **Visual Studio**.
    2. Press **F5** to run the application.
    3. Alternatively, use the .NET CLI:
-      1. dotnet build
-      2. dotnet run
+      i. dotnet build
+      ii. dotnet run
 6.**Usage Instructions**
-     1. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
-     2.   Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
-     3.  Summary: Click on the "Summary" link to view expense summaries by category.
+     i. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
+     ii.   Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
+     iii.  Summary: Click on the "Summary" link to view expense summaries by category.
 
 7.**Folder Structure**
-    1. Controllers: Handles the request and response logic.
-    2. Models: Defines the database schema and business logic.
-    3. Views: Contains Razor pages for the UI.
-    4. wwwroot: Static files like CSS, JavaScript, and images.
+       i. Controllers: Handles the request and response logic.
+       ii. Models: Defines the database schema and business logic.
+       iii. Views: Contains Razor pages for the UI.
+       iv. wwwroot: Static files like CSS, JavaScript, and images.
 
 8.**Technologies Used**
-     1.ASP.NET Core MVC
-     2.Entity Framework Core
-     3.SQL Server
-     4. Bootstrap (for styling)
+     i.ASP.NET Core MVC
+     ii.Entity Framework Core
+     iii.SQL Server
+     iv. Bootstrap (for styling)
 
 9.**Contribution**
-      1.Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
+      i.Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
 
 10.**License**
-      1.This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the          license terms.
+      i.This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the          license terms.
 
 11.**Troubleshooting**
-    If you encounter any issues, consider the following:
-       1. Verify your SQL Server instance is running.
-       2. Ensure the database connection string is correctly configured in appsettings.json.
-       3. Check for missing NuGet packages and restore them using Visual Studio or dotnet restore.
-       4. Run dotnet ef database update again if the database tables are missing.
+       i. Verify your SQL Server instance is running.
+       ii. Ensure the database connection string is correctly configured in appsettings.json.
+       iii. Check for missing NuGet packages and restore them using Visual Studio or dotnet restore.
+       iv. Run dotnet ef database update again if the database tables are missing.
 12.**Contact**
-For any questions or feedback, feel free to contact me:
-**Email**: vaibhavjoshicoer@gmail.com
-**Linkedlin**: [Vaibhav Joshi](https://www.linkedin.com/in/vaibhav-joshi-702287185/)
+   i. **Email**: vaibhavjoshicoer@gmail.com
+   ii.**Linkedlin**: [Vaibhav Joshi](https://www.linkedin.com/in/vaibhav-joshi-702287185/)
 
 
 
