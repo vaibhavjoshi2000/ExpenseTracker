@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ExpenseTracker1.Models.Expense>
+
+@{
+    ViewData["Title"] = "Expenses List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- Filtering Form -->
+<form method="get" class="mb-3">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="category" class="form-control" placeholder="Category" value="@ViewData["CurrentCategory"]" />
+        </div>
+        <div class="col">
+            <input type="date" name="startDate" class="form-control" />
+        </div>
+     @*    <div class="col">
+            <input type="date" name="endDate" class="form-control" />
+        </div> *@
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+</form>
+
+
+
+<!-- Display appropriate message if no items are available -->
+@if (ViewData["NoItemsMessage"] != null)
+{
+    <div class="alert alert-warning">
+        @ViewData["NoItemsMessage"]
+        @if (ViewData["NoItemsMessage"].ToString() == "No items are available currently. Please add an item.")
+        {
+            <a href="@Url.Action("Create", "Expense")" class="btn btn-primary">Add Item</a>
+        }
+    </div>
+}
+
+<!-- Expense Table -->
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Category</td>
+                    <td>@item.Date.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+

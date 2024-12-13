@@ -1,0 +1,23 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navbar-nav .nav-link:hover {
+    color: black !important; /* Text turns black..  !important: Ensures the styles take precedence over Bootstrap defaults.*/
+    background-color: white !important; /* Background turns white */
+    text-decoration: none; /* No underline */
+}

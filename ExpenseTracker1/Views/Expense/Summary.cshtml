@@ -1,0 +1,23 @@
+﻿
+<h2>Expense Summary</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Total Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Category</td>
+                <td>@item.TotalAmount.ToString("C")</td> <!-- Displays as currency -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-primary">Back to List</a>
+

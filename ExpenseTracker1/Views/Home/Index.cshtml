@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container text-center mt-5">
+    <h1>Welcome to Expense Tracker</h1>
+    <p class="lead">
+        Keep track of your expenses efficiently and manage your budget like a pro.
+    </p>
+
+    <!-- Quick Navigation Links -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">View Expenses</h5>
+                    <p class="card-text">See all your expenses in one place.</p>
+                    <a href="@Url.Action("Index", "Expense")" class="btn btn-primary">View Expenses</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add New Expense</h5>
+                    <p class="card-text">Add a new expense to your tracker.</p>
+                    <a href="@Url.Action("Create", "Expense")" class="btn btn-success">Add Expense</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Expense Summary</h5>
+                    <p class="card-text">Get Summarize expenses by category.</p>
+                    <a href="@Url.Action("Summary", "Expense")" class="btn btn-info">View Summary</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="mt-5">
+        <h3>About Expense Tracker</h3>
+        <p>
+            This application helps you manage your personal or business expenses effectively.
+            You can add, edit, delete, and view detailed expense records. It also provides
+            filtering options and a summary of your expenses by category.
+        </p>
+    </div>
+</div>
+
