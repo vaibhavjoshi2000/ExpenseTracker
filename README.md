@@ -10,9 +10,9 @@ An ASP.NET Core MVC application to track expenses, categorize them, and generate
 
 # Prerequisites
 Before setting up this project, ensure you have the following installed on your machine:
-=> **NET SDK (6.0 or later)**
+a) **NET SDK (6.0 or later)**
 [Download .NET](https://dotnet.microsoft.com/download)
-=> **SQL Server (Express or Developer Edition recommended)**
+b) **SQL Server (Express or Developer Edition recommended)**
 [Download SQL Server](https://www.microsoft.com/en-in/sql-server/sql-server-downloads)
 => **Visual Studio 2022 (or later) with ASP.NET and web development workload.**
 [Download Visual Studio](https://visualstudio.microsoft.com/)
