@@ -48,8 +48,8 @@ Follow these steps to set up and run the project on your machine:
             2. dotnet run
 6. **Usage Instructions**
          1. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
-         2.   Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
-         3.  Summary: Click on the "Summary" link to view expense summaries by category.
+         2. Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
+         3. Summary: Click on the "Summary" link to view expense summaries by category.
 
 7. **Folder Structure**
           1. Controllers: Handles the request and response logic.
@@ -76,7 +76,7 @@ Follow these steps to set up and run the project on your machine:
        4. Run dotnet ef database update again if the database tables are missing.
 12. **Contact**
       1. **Email**: vaibhavjoshicoer@gmail.com
-      2.**Linkedlin**: [Vaibhav Joshi](https://www.linkedin.com/in/vaibhav-joshi-702287185/)
+      2. **Linkedlin**: [Vaibhav Joshi](https://www.linkedin.com/in/vaibhav-joshi-702287185/)
    
 
 
