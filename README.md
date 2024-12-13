@@ -34,47 +34,47 @@ cd expense-tracker
    5. If you are using SQL Authentication, replace Integrated Security=True with User ID=your-username;Password=your-   
        password;.   
 3. **Install below Entity Framework from Nuget Package Manager**
-  =>Microsoft.EntityFrameworkCore
-  =>Microsoft.EntityFrameworkCore.Tools
-  =>Microsoft.EntityFrameworkCore.SqlServer
+   1. Microsoft.EntityFrameworkCore
+   2. Microsoft.EntityFrameworkCore.Tools
+   3. Microsoft.EntityFrameworkCore.SqlServer
 4. **Apply Migrations(It will create the necessary tables in the database)**
-  =>Add-Migration "InitialCreate"
-  =>Update-database
+     1. Add-Migration "InitialCreate"
+     2. Update-database
 5. **4. Build and Run the Application**
-  =>Open the project in **Visual Studio**.
-  =>Press **F5** to run the application.
-  =>Alternatively, use the .NET CLI:
-    =>dotnet build
-    =>dotnet run
+   1. Open the project in **Visual Studio**.
+   2. Press **F5** to run the application.
+   3. Alternatively, use the .NET CLI:
+      1. dotnet build
+      2. dotnet run
 6.**Usage Instructions**
-  Expenses: Navigate to the "Expenses" page to view all recorded expenses.
-  Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
-  Summary: Click on the "Summary" link to view expense summaries by category.
+  1. Expenses: Navigate to the "Expenses" page to view all recorded expenses.
+     Add Expense: Use the "Add Expense" link in the navbar to record a new expense.
+     Summary: Click on the "Summary" link to view expense summaries by category.
 
 7.**Folder Structure**
- =>Controllers: Handles the request and response logic.
- =>Models: Defines the database schema and business logic.
- =>Views: Contains Razor pages for the UI.
- =>wwwroot: Static files like CSS, JavaScript, and images.
+    1. Controllers: Handles the request and response logic.
+    2. Models: Defines the database schema and business logic.
+    3. Views: Contains Razor pages for the UI.
+    4. wwwroot: Static files like CSS, JavaScript, and images.
 
 8.**Technologies Used**
-  =>ASP.NET Core MVC
-  =>Entity Framework Core
-  =>SQL Server
-  =>Bootstrap (for styling)
+  1.ASP.NET Core MVC
+  2.Entity Framework Core
+  3.SQL Server
+  4. Bootstrap (for styling)
 
 9.**Contribution**
-   =>Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
+   1.Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
 
 10.**License**
-    =>This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the license terms.
+    1.This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the          license terms.
 
 11.**Troubleshooting**
-    =>If you encounter any issues, consider the following:
-       =>Verify your SQL Server instance is running.
-       =>Ensure the database connection string is correctly configured in appsettings.json.
-       =>Check for missing NuGet packages and restore them using Visual Studio or dotnet restore.
-       =>Run dotnet ef database update again if the database tables are missing.
+    If you encounter any issues, consider the following:
+       1. Verify your SQL Server instance is running.
+       2. Ensure the database connection string is correctly configured in appsettings.json.
+       3. Check for missing NuGet packages and restore them using Visual Studio or dotnet restore.
+       4. Run dotnet ef database update again if the database tables are missing.
 12.**Contact**
 For any questions or feedback, feel free to contact me:
 **Email**: vaibhavjoshicoer@gmail.com
