@@ -3,10 +3,10 @@
 An ASP.NET Core MVC application to track expenses, categorize them, and generate summaries. This project is designed for learning purposes and can also be used as a basic template for personal expense tracking.
 
 # Features
-=>Add, view, and manage expenses.
-=>Categorize expenses.
-=>Generate expense summaries by category.
-=>Modern and responsive design using Bootstrap.
+   1. Add, view, and manage expenses.
+   2. Categorize expenses.
+   3. Generate expense summaries by category.
+   4. Modern and responsive design using Bootstrap.
 
 # Prerequisites
 Before setting up this project, ensure you have the following installed on your machine:
@@ -20,8 +20,8 @@ Before setting up this project, ensure you have the following installed on your 
 # Getting Started
 Follow these steps to set up and run the project on your machine:
 1. **Clone the Repository**
-git clone https://github.com/vaibhavjoshi2000/ExpenseTracker.git
-cd expense-tracker
+      i. git clone https://github.com/vaibhavjoshi2000/ExpenseTracker.git
+      ii. cd expense-tracker
 2. **Set Up the Database**
    1. Open **SQL Server Management Studio (SSMS)** or a similar SQL Server client.
    2. Create a new database named ExpenseTrackerDb.
